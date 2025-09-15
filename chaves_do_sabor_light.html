@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaves do Sabor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff5e6;
+      color: #3a2c20;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1555992336-cbf8efadcf23') center/cover no-repeat;
+      color: #fff5e6;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+
+    header p {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 20px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fffaf3;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px 0;
+      color: #b23a48;
+      font-size: 1rem;
+      padding: 0 5px;
+    }
+
+    /* Links do WhatsApp */
+    .links {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .btn {
+      display: block;
+      width: 80%;
+      max-width: 300px;
+      margin: 10px auto;
+      padding: 15px;
+      font-size: 1rem;
+      border-radius: 30px;
+      text-decoration: none;
+      text-align: center;
+      color: #fff;
+      background: #25d366;
+      transition: background 0.3s;
+    }
+
+    .btn i {
+      margin-right: 8px;
+    }
+
+    .btn:hover {
+      background: #128c7e;
+    }
+
+    footer {
+      background: #3a2c20;
+      color: #fff5e6;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #f48c06;
+      text-decoration: none;
+    }
+
+    footer a i {
+      margin-right: 6px;
+    }
+
+    /* RESPONSIVIDADE */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 0.9rem;
+      }
+      .card img {
+        height: 130px;
+      }
+      .card h3 {
+        font-size: 0.95rem;
+      }
+      .btn {
+        width: 90%;
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      header p {
+        font-size: 0.85rem;
+      }
+      .card img {
+        height: 120px;
+      }
+      .card h3 {
+        font-size: 0.9rem;
+      }
+      .btn {
+        width: 95%;
+        font-size: 0.9rem;
+        padding: 12px;
+      }
+    }
+
+    /* Logo no header */
+    header .logo {
+      display: block;
+      margin: 0 auto 10px; /* centralizada e espaço abaixo */
+      max-width: 150px;
+      height: auto;
+    }
+
+    /* Responsividade */
+    @media (max-width: 480px) {
+      header .logo {
+        max-width: 100px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+
+  <header>
+  <!-- LOGO -->
+  <img src="logo.png" alt="Chaves do Sabor" class="logo">
+
+  <h1>Chaves do Sabor</h1>
+  <p>O melhor churrasco com acompanhamentos irresistíveis!</p>
+</header>
+
+  <!-- LINKS WHATSAPP NO TOPO -->
+  <section class="links">
+    <h2 style="color:#25d366;">Faça seu pedido</h2>
+    <a class="btn" href="https://wa.me/5527995225420" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Churrasqueiro</a>
+    <a class="btn" href="https://wa.me/5599999999999" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Acompanhamentos</a>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section>
+    <h2 style="text-align:center; margin-bottom: 30px; color:#e85d04;">Nossos Serviços</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1604908177225-df4f85e8fef7" alt="Serviço de churrasqueiro">
+        <h3>Serviço de Churrasqueiro</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1645111996005-0f8ad13cf5df" alt="Feijão tropeiro">
+        <h3>Feijão Tropeiro</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1601050690597-c7d6a7e9e2e6" alt="Arroz temperado">
+        <h3>Arroz Temperado</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Vinagrete">
+        <h3>Vinagrete</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1601050690597-c7d6a7e9e2e6" alt="Salada de Maionese">
+        <h3>Salada de Maionese</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Farofa">
+        <h3>Farofa de cebola e batata palha</h3>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Siga-nos no <a href="https://instagram.com/seu_instagram" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></p>
+    <p>&copy; 2025 Chaves do Sabor</p>
+  </footer>
+
+  <!-- Toastify -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script>
+    window.onload = function() {
+      Toastify({
+        text: "🍖 Bem-vindo ao Chaves do Sabor! Seu churrasco começa aqui.",
+        duration: 4000,
+        gravity: "top",
+        position: "center",
+        backgroundColor: "linear-gradient(to right, #ff7e5f, #feb47b)",
+      }).showToast();
+    }
+  </script>
+
+</body>
+</html>
